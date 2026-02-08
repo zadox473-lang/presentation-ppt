@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save the Environment</title>
+    <style>
+        /* Global Styles - Element selectors for body, headings, and paragraphs */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8f0; /* Light green background for eco-theme */
+            color: #2e8b57; /* Sea green text */
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            color: #006400; /* Dark green for headings */
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        p {
+            margin: 10px 0;
+            text-align: justify;
+        }
+
+        /* Header Styles - ID selector for header */
+        #main-header {
+            background-color: #228b22; /* Forest green */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #006400;
+        }
+
+        /* Navigation Styles - Element and class selectors for nav and links */
+        nav {
+            background-color: #006400;
+            padding: 10px;
+            display: flex; /* Flexbox for horizontal layout */
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s; /* Smooth hover effect */
+        }
+
+        nav a:hover {
+            background-color: #228b22; /* Hover effect */
+        }
+
+        nav a:visited {
+            color: #e0f7e0; /* Lighter green for visited links */
+        }
+
+        nav a:active {
+            background-color: #004d00; /* Darker green for active state */
+        }
+
+        /* Section Styles - ID and class selectors for sections and articles */
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            scroll-margin-top: 70px; /* For smooth scrolling */
+        }
+
+        #home {
+            background-color: #e0f7e0; /* Very light green */
+            text-align: center;
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        /* Image Styles - Class selector for images with borders and hover effects */
+        .image-placeholder {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border: 5px solid #228b22;
+            border-radius: 10px;
+            margin: 20px auto;
+            display: block;
+            transition: transform 0.3s; /* Hover effect */
+        }
+
+        .image-placeholder:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
+
+        /* List Styles - Element selectors for ul and ol */
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 40px;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        /* Table Styles - Element selectors for table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #f0f8f0;
+        }
+
+        th, td {
+            border: 1px solid #228b22;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #228b22;
+            color: white;
+        }
+
+        /* Form Styles - Element and ID selectors for form */
+        #contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #e0f7e0;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #228b22;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #228b22;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #006400;
+        }
+
+        /* Footer Styles - Element selector for footer */
+        footer {
+            background-color: #006400;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        /* Group Selector - Applying common styles to multiple elements */
+        h1, h2, h3, p, li, th, td {
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Responsive Design - Media query for smaller screens */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            section {
+                margin: 10px;
+                padding: 15px;
+            }
+            .image-placeholder {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <h1>Save the Environment</h1>
+        <p>An Educational Journey Towards a Greener Planet</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#what-is-pollution">What is Environmental Pollution</a></li>
+            <li><a href="#causes">Causes of Pollution</a></li>
+            <li><a href="#effects">Effects of Pollution</a></li>
+            <li><a href="#types">Types of Pollution</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <article>
+            <h2>Home / Introduction</h2>
+            <p>Welcome to our comprehensive guide on saving the environment. In today's world, environmental issues like pollution, climate change, and deforestation threaten our planet's future. This website aims to educate students, teachers, and the general public about the importance of environmental conservation. By understanding the causes, effects, and solutions, we can all contribute to a sustainable future. Explore the sections below to learn more and take meaningful action towards protecting our Earth.</p>
+            <p>Did you know that over 1 million species are at risk of extinction due to human activities? Or that deforestation contributes to 20% of global greenhouse gas emissions? These facts highlight the urgency of our mission. Join us in spreading awareness and making a difference!</p>
+            <img src="images/nature.jpg" alt="Beautiful forest landscape" class="image-placeholder">
+        </article>
+    </section>
+    <section id="what-is-pollution">
+        <article>
+            <h2>What is Environmental Pollution</h2>
+            <p>Environmental pollution refers to the introduction of harmful substances or products into the environment, causing adverse changes. It can be natural or man-made and affects air, water, soil, and living organisms. Pollution disrupts the balance of ecosystems and poses serious threats to human health and biodiversity. Common types include air pollution from vehicle emissions, water pollution from industrial waste, and soil pollution from pesticides. Understanding pollution is the first step towards prevention and mitigation.</p>
+            <p>For instance, air pollution can lead to respiratory problems, while water pollution contaminates drinking sources. As students, learning about pollution helps us appreciate the need for clean air, water, and land. This section sets the foundation for the rest of the website by defining key concepts.</p>
+            <img src="images/pollution-overview.jpg" alt="Overview of pollution" class="image-placeholder">
+        </article>
+    </section>
+    <section id="causes">
+        <article>
+            <h2>Causes of Pollution</h2>
+            <p>Pollution arises from various human activities that prioritize convenience over sustainability. Here are the primary causes:</p>
+            <ol>
+                <li><strong>Industrial Activities:</strong> Factories release toxic chemicals and gases into the air and water, contributing to widespread contamination.</li>
+                <li><strong>Vehicle Emissions:</strong> Cars and trucks burn fossil fuels, releasing carbon dioxide and other pollutants that cause smog and acid rain.</li>
+                <li><strong>Deforestation:</strong> Cutting down trees for agriculture and urbanization reduces the planet's ability to absorb CO2 and maintain biodiversity.</li>
+                <li><strong>Improper Waste Disposal:</strong> Dumping plastic, chemicals, and sewage into landfills and oceans leads to long-term environmental damage.</li>
+                <li><strong>Agricultural Practices:</strong> The use of pesticides and fertilizers pollutes soil and waterways, affecting food chains.</li>
+                <li><strong>Overpopulation:</strong> Increased population demands more resources, leading to overuse and pollution.</li>
+            </ol>
+            <p>These causes are interconnected; for example, industrialization often leads to deforestation. By identifying them, we can target solutions effectively. Education plays a key role in reducing these activities through awareness and policy changes.</p>
+            <img src="images/causes-pollution.jpg" alt="Causes of pollution" class="image-placeholder">
+        </article>
+    </section>
+    <section id="effects">
+        <article>
+            <h2>Effects of Pollution</h2>
+            <p>The effects of pollution are far-reaching and impact every aspect of life on Earth. They include:</p>
+            <ul>
+                <li><strong>Health Impacts:</strong> Pollution causes diseases like asthma, cancer, and heart problems due to exposure to toxins.</li>
+                <li><strong>Climate Change:</strong> Greenhouse gases trap heat, leading to rising temperatures, extreme weather, and sea-level rise.</li>
+                <li><strong>Biodiversity Loss:</strong> Animals and plants lose habitats, resulting in extinction and disrupted ecosystems.</li>
+                <li><strong>Economic Costs:</strong> Pollution leads to healthcare expenses, crop failures, and cleanup efforts.</li>
+                <li><strong>Water Scarcity:</strong> Contaminated water sources reduce availability for drinking and agriculture.</li>
+                <li><strong>Soil Degradation:</strong> Polluted soil affects food production and leads to desertification.</li>
+            </ul>
+            <p>These effects are not just environmental but also social and economic. For example, polluted air in cities affects millions of people daily. Understanding these consequences motivates action and highlights the importance of preventive measures.</p>
+            <img src="images/effects-pollution.jpg" alt="Effects of pollution" class="image-placeholder">
+        </article>
+    </section>
+    <section id="types">
+        <article>
+            <h2>Types of Pollution</h2>
+            <p>Pollution is categorized into several types based on the medium affected. The table below summarizes key types, their causes, and effects:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Type of Pollution</th>
+                        <th>Causes</th>
+                        <th>Effects</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Air Pollution</td>
+                        <td>Vehicle emissions, industrial smoke, burning of fossil fuels</td>
+                        <td>Respiratory diseases, acid rain, global warming, smog</td>
+                    </tr>
+                    <tr>
+                        <td>Water Pollution</td>
+                        <td>Chemical runoff, sewage discharge, oil spills</td>
+                        <td>Contaminated drinking water, dead zones in oceans, harm to aquatic life</td>
+                    </tr>
+                    <tr>
+                        <td>Soil Pollution</td>
+                        <td>Pesticides, industrial waste, improper disposal of plastics</td>
+                        <td>Reduced crop yields, health risks from toxins, loss of fertile land</td>
+                    </tr>
+                    <tr>
+                        <td>Noise Pollution</td>
+                        <td>Traffic, construction, loud machinery</td>
+                        <td>Hearing loss, stress, sleep disturbances, wildlife disruption</td>
+                    </tr>
+                    <tr>
+                        <td>Light Pollution</td>
+                        <td>Excessive artificial lighting in cities</td>
+                        <td>Disruption of animal migration, energy waste, health issues like insomnia</td>
+                    </tr>
+                    <tr>
+                        <td>Thermal Pollution</td>
+                        <td>Discharge of heated water from industries</td>
+                        <td>Reduced oxygen in water, harm to fish and aquatic ecosystems</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>This table provides a clear overview for educational purposes. Each type of pollution requires specific strategies to address it, emphasizing the need for comprehensive environmental policies.</p>
+            <img src="images/types-pollution.jpg" alt="Types of pollution" class="image-placeholder">
+        </article>
+    </section>
+    <section id="solutions">
+        <article>
+            <h2>Solutions: Reduce, Reuse, Recycle</h2>
+            <p>Combating pollution requires collective effort. The "Reduce, Reuse, Recycle" principle is a simple yet effective framework:</p>
+            <ol>
+                <li><strong>Reduce:</strong> Minimize waste by using less. For example, opt for digital receipts instead of paper or buy products with minimal packaging.</li>
+                <li><strong>Reuse:</strong> Extend the life of items. Reuse bags, bottles, and containers instead of buying new ones.</li>
+                <li><strong>Recycle:</strong> Convert waste into new materials. Sort plastics, paper, and metals for recycling to reduce landfill waste.</li>
+            </ol>
+            <p>Additional solutions include:</p>
+            <ul>
+                <li>Switching to renewable energy sources like solar and wind power.</li>
+                <li>Planting trees to combat deforestation and absorb CO2.</li>
+                <li>Using public transport or biking to cut vehicle emissions.</li>
+                <li>Supporting eco-friendly products and companies.</li>
+                <li>Educating communities through workshops and campaigns.</li>
+            </ul>
+            <p>These steps empower individuals and communities to make a difference. As students, you can start by implementing these in your daily lives and encouraging others to do the same.</p>
+            <img src="images/solutions-recycle.jpg" alt="Reduce, reuse, recycle" class="image-placeholder">
+        </article>
+    </section>
+    <section id="contact">
+        <article>
+            <h2>Contact Us</h2>
+            <p>Have questions, suggestions, or want to share your environmental initiatives? Reach out to us! We value your input and are here to help spread awareness.</p>
+            <form id="contact-form" action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </article>
+    </section>
+    
+        
+        
+        
+        <footer class="footer">
+  <p>© 2026 Save the Environment</p>
+  <p>Created by <strong>Prachi</strong> | Class 10th D | Roll No. 8</p>
+</footer>
+    
+</body>
+</html>
