@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Save the Environment</title>
+    <title>Save the Environment - Prachi</title>
     <style>
+        /* Global Styles */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -21,14 +22,15 @@
         }
 
         p {
-            margin: 10px 0;
+            margin: 10px 20px;
             text-align: justify;
         }
 
+        /* Header & Nav */
         #main-header {
             background-color: #228b22;
             color: white;
-            padding: 20px;
+            padding: 30px;
             text-align: center;
             border-bottom: 5px solid #006400;
         }
@@ -59,38 +61,40 @@
             text-decoration: none;
             padding: 10px 15px;
             border-radius: 5px;
-            transition: background-color 0.3s;
+            font-weight: bold;
         }
 
         nav a:hover {
             background-color: #228b22;
         }
 
+        /* Section Styles */
         section {
             padding: 40px 20px;
             margin: 20px auto;
-            max-width: 1200px;
+            max-width: 900px;
             background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             scroll-margin-top: 70px;
         }
 
         .image-placeholder {
             width: 100%;
-            max-width: 600px;
+            max-width: 550px;
             height: auto;
-            border: 5px solid #228b22;
+            border: 4px solid #228b22;
             border-radius: 10px;
             margin: 20px auto;
             display: block;
-            transition: transform 0.3s;
+            transition: 0.3s;
         }
 
         .image-placeholder:hover {
-            transform: scale(1.05);
+            transform: scale(1.03);
         }
 
+        /* Table & Form */
         table {
             width: 100%;
             border-collapse: collapse;
@@ -99,7 +103,7 @@
 
         th, td {
             border: 1px solid #228b22;
-            padding: 10px;
+            padding: 12px;
             text-align: left;
         }
 
@@ -109,7 +113,7 @@
         }
 
         #contact-form {
-            max-width: 600px;
+            max-width: 500px;
             margin: 0 auto;
             padding: 20px;
             background-color: #e0f7e0;
@@ -118,29 +122,36 @@
 
         input, textarea, button {
             width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
+            padding: 12px;
+            margin-bottom: 10px;
             border-radius: 5px;
             border: 1px solid #228b22;
+            box-sizing: border-box;
         }
 
         button {
             background-color: #228b22;
             color: white;
             cursor: pointer;
-            font-weight: bold;
+            font-size: 16px;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #006400;
         }
 
         footer {
             background-color: #006400;
             color: white;
             text-align: center;
-            padding: 15px;
-            margin-top: 20px;
+            padding: 20px;
+            margin-top: 30px;
         }
 
         @media (max-width: 768px) {
-            nav ul { flex-direction: column; text-align: center; }
+            nav ul { flex-direction: column; }
+            nav li { margin: 5px 0; }
         }
     </style>
 </head>
@@ -154,10 +165,8 @@
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#what-is-pollution">Pollution</a></li>
-            <li><a href="#causes">Causes</a></li>
+            <li><a href="#pollution">Pollution</a></li>
             <li><a href="#effects">Effects</a></li>
-            <li><a href="#types">Types</a></li>
             <li><a href="#solutions">Solutions</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -165,46 +174,26 @@
 
     <section id="home">
         <h2>Home / Introduction</h2>
-        <p>Welcome to our guide on saving the environment. Let's make the Earth green again!</p>
-        <img src="images/nature.jpg" alt="Nature" class="image-placeholder">
+        <p>Welcome! Our mission is to educate everyone about the importance of nature. Let's work together to protect our environment for future generations.</p>
+        <img src="nature.jpg" alt="Nature" class="image-placeholder">
     </section>
 
-    <section id="what-is-pollution">
+    <section id="pollution">
         <h2>What is Environmental Pollution</h2>
-        <p>Pollution is the introduction of harmful materials into the environment.</p>
-        <img src="images/pollution-overview.jpg" alt="Overview" class="image-placeholder">
-    </section>
-
-    <section id="causes">
-        <h2>Causes of Pollution</h2>
-        <ul>
-            <li>Industrial Activities</li>
-            <li>Vehicle Emissions</li>
-            <li>Deforestation</li>
-        </ul>
-        <img src="images/Causes-pollution.jpg" alt="Causes" class="image-placeholder">
+        <p>Pollution happens when harmful substances contaminate our air, water, and soil. It's a major threat to all living beings.</p>
+        <img src="pollution-overview..jpg" alt="Overview" class="image-placeholder">
     </section>
 
     <section id="effects">
         <h2>Effects of Pollution</h2>
-        <p>It leads to climate change, health issues, and loss of biodiversity.</p>
-        <img src="images/effects-pollution.jpg" alt="Effects" class="image-placeholder">
-    </section>
-
-    <section id="types">
-        <h2>Types of Pollution</h2>
-        <table>
-            <tr><th>Type</th><th>Source</th></tr>
-            <tr><td>Air</td><td>Factories & Cars</td></tr>
-            <tr><td>Water</td><td>Waste in Rivers</td></tr>
-        </table>
-        <img src="images/Types-pollution.jpg" alt="Types" class="image-placeholder">
+        <p>Pollution causes health problems, destroys habitats, and leads to global warming. We must act now to stop these effects.</p>
+        <img src="effects-pollution.jpg" alt="Effects" class="image-placeholder">
     </section>
 
     <section id="solutions">
         <h2>Solutions: Reduce, Reuse, Recycle</h2>
-        <p>Small steps lead to big changes. Start today!</p>
-        <img src="images/solutions-recycle.jpg" alt="Solutions" class="image-placeholder">
+        <p>The best way to help is to follow the 3 Rs. Minimize waste, use things again, and recycle whatever you can.</p>
+        <img src="solutions-recycle.jpg" alt="Solutions" class="image-placeholder">
     </section>
 
     <section id="contact">
@@ -223,4 +212,4 @@
     </footer>
 
 </body>
-</html>
+    </html>
